@@ -4,6 +4,10 @@ This is a widget for ArcGIS API for Javascript 4. It allows you go back to your 
 
 This widget is based on the echarts library : https://www.echartsjs.com/en/index.html
 
+With this widget, you can visualize your data through a pie chart. The chart is dynamic, when you navigate in the map, the data are updated. You can click on a sector to flash features.
+
+![](piechart.gif)
+
 ## Installation
 
 ### Clone
