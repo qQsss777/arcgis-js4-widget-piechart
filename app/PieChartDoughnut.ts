@@ -1,11 +1,13 @@
-import echarts from 'echarts';
+import * as echarts from 'echarts';
+import ECharts = echarts.ECharts;
+import EChartOption = echarts.EChartOption;
 
-export const createChartDoughnut = (nodeElement: HTMLDivElement, title: string): any => {
-    const chart = echarts.init(nodeElement)
-    const option = {
+export const createChartDoughnut = (nodeElement: HTMLDivElement, title: string): Promise<ECharts> => {
+    const chart: ECharts = echarts.init(nodeElement)
+    const option: EChartOption = {
         title: {
             text: title,
-            x: 'center'
+            textAlign: 'center'
         },
 
         tooltip: {

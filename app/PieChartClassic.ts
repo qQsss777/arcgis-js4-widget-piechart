@@ -1,13 +1,10 @@
-import echarts from 'echarts';
+import * as echarts from 'echarts';
+import ECharts = echarts.ECharts;
+import EChartOption = echarts.EChartOption;
 
-export const createChartClassic = (nodeElement: HTMLDivElement, title: string): any => {
+export const createChartClassic = (nodeElement: HTMLDivElement, title: string): Promise<ECharts> => {
     const chart = echarts.init(nodeElement);
-    const option = {
-        title: {
-            text: title,
-            x: 'center'
-        },
-
+    const option: EChartOption = {
         tooltip: {
             trigger: 'item',
             formatter: "{b}: {c} ({d}%)"
@@ -18,6 +15,7 @@ export const createChartClassic = (nodeElement: HTMLDivElement, title: string): 
                 radius: '50%',
                 center: ['50%', '60%'],
                 data: [],
+
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -26,7 +24,11 @@ export const createChartClassic = (nodeElement: HTMLDivElement, title: string): 
                     }
                 }
             }
-        ]
+        ],
+        title: {
+            text: title,
+            textAlign: 'center'
+        },
     };
     if (option && typeof option === "object") {
         chart.setOption(option, true);

@@ -25,6 +25,7 @@
     "echarts": "^4.5.0"
   },
   "devDependencies": {
+    "@types/echarts": "^4.4.1",
     "gulp": "^4.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-typescript": "^6.0.0-alpha.1",
