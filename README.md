@@ -91,7 +91,8 @@ view.ui.add(myWidget, "top-right")
 
 ```
 
-ArcGIS Widget is bases on MVC pattern (https://developers.arcgis.com/javascript/latest/sample-code/widgets-custom-widget/index.html) so you can use only the viewmodel if you want. The properties are the same, just one more to display or not : isDisplay (boolean)
+ArcGIS Widget is bases on MVC pattern (https://developers.arcgis.com/javascript/latest/sample-code/widgets-custom-widget/index.html) so you can use only the viewmodel if you want. The properties are the same, just one more to display or not :
+- isDisplayed (boolean)
 
 ```javascript
 
