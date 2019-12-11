@@ -72,9 +72,9 @@ class PieChartWidget extends declared(Widget) {
     @aliasOf("viewModel.fieldsStat")
     fieldsStat: Array<string>
 
-    @aliasOf("viewModel.isDisplay")
+    @aliasOf("viewModel.isDisplayed")
     @renderable()
-    isDisplay: boolean
+    isDisplayed: boolean
 
     @property({
         type: PieChartWidgetViewModel
@@ -90,7 +90,7 @@ class PieChartWidget extends declared(Widget) {
 
     render() {
 
-        const iconDisplay = this.isDisplay ? CSS.chartVisibleIcon : CSS.chartHiddenIcon
+        const iconDisplay = this.isDisplayed ? CSS.chartVisibleIcon : CSS.chartHiddenIcon
         const classBase = this.classes(
             CSS.base
         );

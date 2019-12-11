@@ -20,7 +20,7 @@ interface IPieChartWidgetViewModelProperties {
     featureLayer: FeatureLayer,
     fieldsStat: Array<string>,
     title: string,
-    isDisplay: boolean
+    isDisplayed: boolean
 }
 
 interface IChartData {
@@ -61,7 +61,7 @@ class PieChartWidgetViewModel extends declared(Accessor) {
     fieldsStat: Array<string>;
 
     @property()
-    isDisplay: boolean = false;
+    isDisplayed: boolean = false;
 
     @property()
     nodeElement: HTMLDivElement;
@@ -74,13 +74,13 @@ class PieChartWidgetViewModel extends declared(Accessor) {
 
     onCreateChartButton = (containerNode: string): void => {
         //if not in diplaying, display container and chart
-        this.isDisplay ? this._stopGraphic() : this._createPie(containerNode);
+        this.isDisplayed ? this._stopGraphic() : this._createPie(containerNode);
     }
 
     private _stopGraphic = () => {
         //if click button and in displaying, close container and chart
         this.nodeElement.style.display = "none";
-        this.isDisplay = false;
+        this.isDisplayed = false;
     }
 
     private _createPie = (containerNode: string): void => {
@@ -94,7 +94,7 @@ class PieChartWidgetViewModel extends declared(Accessor) {
         !this.chartElement ? this._firstClick(this.nodeElement) : null;
 
         //change the property state
-        this.isDisplay = true;
+        this.isDisplayed = true;
     }
 
     private _firstClick = async (nodeElement: HTMLDivElement) => {
