@@ -1,0 +1,27 @@
+.esri-chartwidget {
+  display: flex;
+  //align-items: start;
+  .esri-widget--button {
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: $interactive-font-color;
+    display: flex;
+    font-size: $icon-size;
+    height: $button-height;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 125ms ease-in-out;
+    width: $button-width;
+  }
+  .esri-widget--chart{
+    min-width: 400px;
+    min-height: 300px;
+    display: none;
+  }
+}
+
+
+@if $include_ChartWidget == true {
+@include chartwidget();
+}

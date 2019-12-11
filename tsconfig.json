@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "module": "amd",
+        "lib": [
+            "dom",
+            "es2015.promise",
+            "es5",
+            "es6",
+            "es7"
+        ],
+        "noImplicitAny": true,
+        "esModuleInterop": true,
+        "sourceMap": true,
+        "jsx": "react",
+        "jsxFactory": "tsx",
+        "target": "es5",
+        "experimentalDecorators": true,
+        "preserveConstEnums": true,
+        "suppressImplicitAnyIndexErrors": true
+    },
+    "include": [
+        "./app/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

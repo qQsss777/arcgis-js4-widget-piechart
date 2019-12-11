@@ -1,0 +1,34 @@
+{
+  "name": "arcgis-js4-widget-pichart",
+  "version": "1.0.0",
+  "description": "Widget for ArcGIS API for JavaScript 4",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qQsss777/arcgis-js4-widget-piechart.git"
+  },
+  "keywords": [
+    "esri",
+    "arcgis",
+    "javascript"
+  ],
+  "author": "Marc Le Moigne",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qQsss777/arcgis-js4-widget-piechart/issues"
+  },
+  "homepage": "https://github.com/qQsss777/arcgis-js4-widget-piechart#readme",
+  "dependencies": {
+    "@types/arcgis-js-api": "^4.13.0",
+    "echarts": "^4.5.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "node-sass": "^4.13.0",
+    "typescript": "^3.7.3"
+  }
+}
