@@ -7,7 +7,8 @@ export const createChartDoughnut = (nodeElement: HTMLDivElement, title: string):
     const option: EChartOption = {
         title: {
             text: title,
-            textAlign: 'center'
+            // @ts-ignore
+            x: 'center'
         },
 
         tooltip: {

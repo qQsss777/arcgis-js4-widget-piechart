@@ -27,7 +27,8 @@ export const createChartClassic = (nodeElement: HTMLDivElement, title: string): 
         ],
         title: {
             text: title,
-            textAlign: 'center'
+            // @ts-ignore
+            x: 'center'
         },
     };
     if (option && typeof option === "object") {

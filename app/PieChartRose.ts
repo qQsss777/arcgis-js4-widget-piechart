@@ -7,7 +7,8 @@ export const createChartRose = (nodeElement: HTMLDivElement, title: string): Pro
     const option: EChartOption = {
         title: {
             text: title,
-            textAlign: 'center'
+            // @ts-ignore
+            x: 'center'
         },
 
         tooltip: {
