@@ -12,7 +12,7 @@ With this widget, you can visualize your data through a pie chart. The chart is 
 
 ### Clone
 
-- Clone this repo to your local machine using `https://github.com/qQsss777/arcgis-js4-widget-savesession.git`
+- Clone this repo to your local machine using `https://github.com/qQsss777/arcgis-js4-widget-piechart.git`
 
 ### Setup
 You must have a ArcGIS JS versio >= 4.11.
